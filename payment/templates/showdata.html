@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django</title>
+</head>
+<body>
+
+<form method="post" action="/getdata/">
+    <table>
+        <tr>
+            <td>Your Name</td>
+            <td><strong>{{ name }}</strong></td>
+        </tr>
+        <tr>
+            <td>Your Email</td>
+            <td><strong>{{ email }}</strong></td>
+        </tr>
+        <tr>
+            <td>Your Phone</td>
+            <td><strong>{{ phone }}</strong></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><strong>{{ Amount }}</strong></td>
+        </tr>
+        <tr>
+            <td>product</td>
+            <td><strong>{{ product }}</strong></td>
+        </tr>
+    </table>
+</form>
+<h4>Your payment has been received </h4>
+</body>
+</html>
