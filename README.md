@@ -30,6 +30,7 @@ pip install -r requirements.txt
 
 ### Run Database Migrations
 ```
+# run db migrations if necessary
 ./payment/manage.py makemigrations
 ./payment/manage.py migrate
 ```
@@ -54,5 +55,6 @@ pip install -r requirements.txt
 ### Testing gunicorn ability to serve the project
 
 ```
-gunicorn payment.wsgi:application
+# on success should be able to serve the app
+gunicorn --pythonpath payment payment.wsgi --log-file -
 ```
