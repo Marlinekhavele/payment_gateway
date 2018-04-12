@@ -74,12 +74,12 @@ git push heroku master
 
 ### Run migrations on Heroku
 ```
-heroku run python payments/manage.py migrate
+heroku run python ./payment/manage.py migrate
 ```
 
 ### Create default django user
 ```
-heroku run python payments/manage.py createsuperuser
+heroku run python ./payment/manage.py createsuperuser
 ```
 
 ### Launch the application
