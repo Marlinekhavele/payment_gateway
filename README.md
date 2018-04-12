@@ -58,3 +58,31 @@ pip install -r requirements.txt
 # on success should be able to serve the app
 gunicorn --pythonpath payment payment.wsgi --log-file -
 ```
+
+# Deploying to Heroku
+
+### Create the app on Heroku
+```
+# ensure heroku cli is installed and logged in first (see heroku documentation)
+heroku create
+```
+
+### Push new code to Heroku
+```
+git push heroku master
+```
+
+### Run migrations on Heroku
+```
+heroku run python payments/manage.py migrate
+```
+
+### Create default django user
+```
+heroku run python payments/manage.py createsuperuser
+```
+
+### Launch the application
+```
+heroku open
+```
