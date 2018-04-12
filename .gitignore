@@ -1,0 +1,10 @@
+# python gen files
+.venv
+__pycache__
+.virtualenv
+
+# Text backup files
+*.bak
+
+#Database
+*.sqlite3
