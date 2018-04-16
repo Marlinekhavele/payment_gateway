@@ -29,10 +29,4 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('send_money/', views.send_money),
     path('send_money/', views.send_money, name='send_money'),
-
-
-    
-    
-        
-   
 ]
